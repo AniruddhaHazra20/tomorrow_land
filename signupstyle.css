@@ -1,0 +1,164 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;1,200;1,400&family=Oswald:wght@600&display=swap');
+
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	font-family:Poppins;
+}
+
+body{
+	width:100%;
+	height:100vh;
+	background:url('https://i.pinimg.com/originals/9e/b4/6d/9eb46d371f5f325762823a32e470bbec.jpg');
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	
+}
+
+.header{
+	width:100%;
+	height:80px;
+	background:black;
+	box-shadow:0px 0px 10px black;
+	padding:0px 5%;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1{
+	font-size:30px;
+	color:white;
+	
+}
+
+.header h1 span{
+	color:red;
+}
+
+.header button{
+	padding:10px 20px;
+	background:red;
+	color:white;
+	outline:none;
+	border:none;
+	border-radius:5px;
+	font-size:15px;
+	cursor:pointer;
+	
+}
+
+.header .buttons a{
+	text-decoration:none;
+	padding:10px 20px;
+	background:red;
+	color:white;
+	outline:none;
+	border:none;
+	border-radius:5px;
+	font-size:15px;
+	cursor:pointer;
+}
+
+
+.popup{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	width:650px;
+	height:350px;
+	background:rgba(0,0,0,0.7);
+	box-shadow:0px 0px 10px black;
+	border-radius:5px;
+	display:none;
+}
+
+.popup .title{
+	width:100%;
+	height:60px;
+	padding:10px;
+	padding-bottom:10px;
+	text-align:center;
+	color:white;
+	background:black;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+.popup .title h2
+{
+	margin-bottom:40px;
+
+}
+
+
+.popup form{
+	width:100%;
+	padding-top:15px;
+	margin-bottom:15px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.popup form .field{
+	width:30%;
+	color:white;
+}
+
+.popup form .field label{
+	font-weight:bold;
+	padding-bottom:10px;
+}
+
+.popup form .field input{
+	width:100%;
+	padding:10px;
+	outline:none;
+	border:2px solid silver;
+	border-radius:10px;
+}
+
+.popup form .field input:focus{
+	background:white;
+	color:black;
+	border:none;
+	box-shadow:inset 0px 0px 5px blue, 0px 0px 5px blue;
+	border-radius:10px;
+	
+}
+
+.popup form select{
+	width:195px;
+	padding:10px;
+	outline:none;
+	border:2px solid silver;
+	border-radius:5px;
+}
+
+
+
+.popup form input[type="submit"]{
+	padding:15px 25px;
+	margin-top:40px;
+	margin-left:250px;
+	background: red;
+	color: white;
+	font-size:15px;
+	border:none;
+	border-radius:5px;
+	cursor:pointer;
+	transition:all ease-in 0.5s;
+}
+
+.popup form input[type="submit"]:hover{
+	box-shadow:inset 400px 0px 0px white;
+	color:black;
+}

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Lemon');
+
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	font-family:Poppins;
+}
+
+body{
+	width:100%;
+	height:100vh;
+	background:url('https://wallpaperaccess.com/full/40137.jpg');
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.login{
+	width:350px;
+	height:500px;
+	background:rgba(0,0,0,0.7);
+	border-radius:5px;
+	box-shadow:0px 0px 10px white, inset 0px 0px 10px white;
+	padding:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	
+}
+
+.login form{
+	width:100%;
+	padding:10px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	gap:20px;
+}
+
+.login form h1{
+	color:white;
+	font-size:40px;
+}
+
+.login form input{
+	width:100%;
+	padding:15px;
+	background:rgba(0,0,0,0.2);
+	color:white;
+	outline:none;
+	border:3px solid white;
+	border-radius:5px;
+	transition:all ease-in 0.4s;	
+}
+
+.login form input::placeholder
+{
+	color:white;
+	font-size:15px;
+	padding-top:4px;
+}
+
+.login form input:focus{
+	background:white;
+	color:blue;
+	border:none;
+	box-shadow:inset 0px 0px 5px blue, 0px 0px 5px blue;
+	border-radius:10px;
+	
+}
+
+.login form input[type="submit"]{
+	background:black;
+	color:white;
+	border:0px 0px 15px black;
+	font-size:18px;
+	margin-top:30px;
+	cursor:pointer;
+	transition:all ease-in 0.4s;
+}
+
+.login form input::placeholder[type="submit"]{
+	color:white;
+	font-size:35px;
+	padding-top:4px
+}
+
+	
+.login form input[type="submit"]:hover{
+	box-shadow:inset 400px 0px 0px white;
+	color:black;
+}
